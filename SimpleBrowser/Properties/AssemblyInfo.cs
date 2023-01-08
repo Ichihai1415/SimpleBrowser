@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // 制御されます。アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更します。
 [assembly: AssemblyTitle("SimpleBrowser")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("シンプルなブラウザー。")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Ichihai1415")]
 [assembly: AssemblyProduct("SimpleBrowser")]
-[assembly: AssemblyCopyright("Copyright ©  2022")]
+[assembly: AssemblyCopyright("Copyright © 2022-2023 Ichihai1415")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
