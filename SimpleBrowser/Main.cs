@@ -49,7 +49,7 @@ namespace SimpleBrowser
         private void Form1_Load(object sender, EventArgs e)
         {
             Settings.Default.Reload();
-            Location = Settings.Default.MainWindowLocation;
+                Location = Settings.Default.MainWindowLocation;
             if (Settings.Default.MainWindowMax)
                 WindowState = FormWindowState.Maximized;
             else
@@ -61,7 +61,7 @@ namespace SimpleBrowser
             Settings.Default.MainWindowSize = Size;
             Settings.Default.MainWindowLocation = Location;
             if (WindowState == FormWindowState.Maximized)
-                Settings.Default.MainWindowMax = true;
+            Settings.Default.MainWindowMax = true;
             else
                 Settings.Default.MainWindowMax = false;
             Settings.Default.Save();
