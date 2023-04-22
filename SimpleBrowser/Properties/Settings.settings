@@ -11,5 +11,8 @@
     <Setting Name="MainWindowMax" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="WebView2Font" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">MS UI Gothic, 9pt</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
