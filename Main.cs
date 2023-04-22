@@ -13,7 +13,7 @@ namespace SimpleBrowser
         public Form1()
         {
             InitializeComponent();
-            MainBrowser.Source = new Uri("https://Ichihai1415.github.io/programs/simple-browser/default.html?ver=1.0.1");
+            MainBrowser.Source = new Uri("https://Ichihai1415.github.io/programs/simple-browser/default.html?ver=1.0.2");
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -117,7 +117,7 @@ namespace SimpleBrowser
             Reload.Enabled = false;
         }
 
-        private void MainBrowser_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
+        private async void MainBrowser_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
         {
             LoadPage.Enabled = true;
             Reload.Enabled = true;
@@ -125,6 +125,8 @@ namespace SimpleBrowser
                 Back.Enabled = true;
             if (MainBrowser.CoreWebView2.CanGoForward)
                 Forward.Enabled = true;
+            if (File.Exists("script.js"))
+                await MainBrowser.CoreWebView2.ExecuteScriptAsync(File.ReadAllText("script.js"));
         }
     }
 }
